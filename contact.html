@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta
+      name="description"
+      content="Portfolio of Okafor Peculiar Chiamaka, web developer."
+    />
+    <title>Contact | Peculiar Chiamaka</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="shell">
+      <header class="header">
+        <nav class="nav" aria-label="Main navigation">
+          <a href="index.html">Home</a><a href="about.html">About</a
+          ><a href="projects.html">Projects</a
+          ><a href="academic-planner.html">Planner</a
+          ><a href="contact.html" aria-current="page">Contact</a>
+        </nav>
+      </header>
+      <main>
+        <section class="intro">
+          <h1>Let’s connect</h1>
+          <p>
+            Have a question or want to say hello? I’d be happy to hear from you.
+          </p>
+        </section>
+        <section class="contact">
+          <article class="panel">
+            <h2>Contact details</h2>
+            <div class="line">
+              <strong>Email</strong><br /><a
+                href="mailto:P.okafor6778@miva.edu.ng"
+                >P.okafor6778@miva.edu.ng</a
+              >
+            </div>
+            <div class="line">
+              <strong>Phone</strong><br /><a href="tel:07062511777"
+                >07062511777</a
+              >
+            </div>
+            <div class="line">
+              <strong>Instagram</strong><br /><a
+                href="https://www.instagram.com/Okafor_pecky/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >@Okafor_pecky ↗</a
+              >
+            </div>
+          </article>
+          <article class="panel">
+            <h2>Send a message</h2>
+            <form id="contactForm" class="fields">
+              <label
+                >Your name<input
+                  name="name"
+                  required
+                  minlength="2"
+                  placeholder="Your name" /></label
+              ><label
+                >Your email<input
+                  name="email"
+                  type="email"
+                  required
+                  placeholder="you@example.com" /></label
+              ><label
+                >Your message<textarea
+                  name="message"
+                  required
+                  minlength="5"
+                  placeholder="Write your message"
+                ></textarea></label
+              ><button class="btn" type="submit">Send message</button>
+              <div
+                class="message"
+                id="formMessage"
+                role="status"
+                aria-live="polite"
+              ></div>
+            </form>
+          </article>
+        </section>
+      </main>
+      <footer class="footer">Made with care · © 2026 Peculiar Chiamaka</footer>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

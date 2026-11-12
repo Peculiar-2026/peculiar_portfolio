@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta
+      name="description"
+      content="Portfolio of Okafor Peculiar Chiamaka, web developer."
+    />
+    <title>Planner | Peculiar Chiamaka</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="shell">
+      <header class="header">
+        <nav class="nav" aria-label="Main navigation">
+          <a href="index.html">Home</a><a href="about.html">About</a
+          ><a href="projects.html">Projects</a
+          ><a href="academic-planner.html" aria-current="page">Planner</a
+          ><a href="contact.html">Contact</a>
+        </nav>
+      </header>
+      <main>
+        <section class="intro">
+          <h1>My planner</h1>
+          <p>A simple space to keep track of the things I want to do.</p>
+        </section>
+        <section class="panel">
+          <h2>My tasks</h2>
+          <form id="taskForm" class="taskform">
+            <input
+              id="taskInput"
+              required
+              maxlength="120"
+              placeholder="Add a task..."
+              aria-label="New task"
+            /><button class="btn" type="submit">Add task</button>
+          </form>
+          <div class="filters">
+            <button type="button" class="active" data-filter="all">All</button
+            ><button type="button" data-filter="active">To do</button
+            ><button type="button" data-filter="done">Completed</button>
+          </div>
+          <div class="tasks" id="taskList" aria-live="polite"></div>
+        </section>
+      </main>
+      <footer class="footer">Made with care · © 2026 Peculiar Chiamaka</footer>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
